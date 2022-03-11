@@ -49,7 +49,7 @@
     </div>
 
     <div id="parte2" class="container">
-        <div id="castellano" class="row">
+        <div class="row">
             <button type="button" class="btn btn-lg btn-primary" disabled></button>
         </div>
 
@@ -66,15 +66,15 @@
         </div>
 
         <div class="row">
-            <button type="button" class="btn btn-secondary btn-lg" disabled></button>
+            <button id="castellano" class="btn btn-secondary btn-lg" disabled></button>
         </div>
 
         <div class="text-center">
             <div class="d-grid gap-2 col-12 mx-auto">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button id="boton1"  class="btn btn-primary"></button>
-                    <button id="boton2"  class="btn btn-primary"></button>
-                    <button id="boton3"  class="btn btn-primary"></button>
+                    <button id="boton1"  class="btn btn-primary">ergeqrg</button>
+                    <button id="boton2"  class="btn btn-primary">qrgqgg</button>
+                    <button id="boton3"  class="btn btn-primary">q3g3gqeg</button>
                 </div>
             </div>
         </div>
@@ -109,10 +109,6 @@
     </div>
 
     <script src="Js/listaVerbos.js"></script>
-    <script>
-        console.log(verbos[2][3])
-    </script>
-
     <script src="Js/jquery.js"></script>
     <script src="Js/jquery-ui.min.js"></script>
     
@@ -132,12 +128,14 @@
 
         function eligeVerbo(){
             var verboElegido = Math.floor( Math.random() * verbos.length);
-            consoe.log(verboElegido)
+            console.log(verboElegido)
             document.getElementById("castellano").innerHTML = verbos[verboElegido][3];
             document.getElementById("boton1").innerHTML = verbos[verboElegido][0];
             document.getElementById("boton2").innerHTML = verbos[verboElegido][1];
             document.getElementById("boton3").innerHTML = verbos[verboElegido][2];
         }
+
+        eligeVerbo();
     </script>
 
 </body>
